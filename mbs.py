@@ -1,3 +1,4 @@
+# this needs to be run with python3.11
 # inscrutable mandelbrot plotting code
 # try running with 800 1000
 import mahotas
