@@ -1,0 +1,33 @@
+name: mbs_env
+channels:
+  - defaults
+dependencies:
+  - bzip2=1.0.8
+  - ca-certificates=2023.01.10
+  - libffi=3.4.2
+  - ncurses=6.4
+  - openssl=1.1.1t
+  - pip=23.0.1
+  - python=3.11.3
+  - readline=8.2
+  - setuptools=66.0.0
+  - sqlite=3.41.2
+  - tk=8.6.12
+  - tzdata=2023c
+  - wheel=0.38.4
+  - xz=5.4.2
+  - zlib=1.2.13
+  - pip:
+      - contourpy==1.0.7
+      - cycler==0.11.0
+      - fonttools==4.39.3
+      - kiwisolver==1.4.4
+      - mahotas==1.4.13
+      - matplotlib==3.7.1
+      - numpy==1.24.3
+      - packaging==23.1
+      - pillow==9.5.0
+      - pyparsing==3.0.9
+      - python-dateutil==2.8.2
+      - six==1.16.0
+prefix: /Users/maddiedailey/miniconda3/envs/mbs_env
