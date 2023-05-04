@@ -4,6 +4,7 @@ import mahotas
 import pylab
 import numpy as np
 import sys
+import argparse
 
 import matplotlib.pyplot as plt
 
@@ -27,14 +28,12 @@ def mandelbrot(h, w, x=-0.5, y=0, z=1, mi=100):
         m[np.abs(z) > 2] = False
     return t
 
-try:
- a1 = sys.argv[1]
- a2 = sys.argv[2]
-except* IndexError:
- print('you need args')
- sys.exit(1)
+parser = argparse.ArgumentParser()
+parser.add_argument('--height', type=int, required=True)
+parse.add_argument('--width', type=int, required=True)
+args = parser.parse_args()
 
-plt.imsave('out.jpg', mandelbrot(int(sys.argv[1]), int(sys.argv[2])), cmap='magma')
+plt.imsave('out.jpg', mandelbrot(args.height, args.width, cmap='magma')
 m = mahotas.imread('out.jpg')
 pylab.imshow(m)
 pylab.show()
