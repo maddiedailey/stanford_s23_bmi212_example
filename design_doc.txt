@@ -1,0 +1,4 @@
+DESIGN DOC:
+1. Set up a requirement.txt for conda depedencies (Maddie)
+2. Merge both versions of the code into one file (Ben)
+3. TODO
